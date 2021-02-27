@@ -1,0 +1,42 @@
+#fields that describe our application, some of them are required
+
+[tool.poetry]
+name = "Python-CI"
+version = "0.0.1"
+description = "pipeline for python scripts"
+authors = ["Thisura Hettiarachci <tdinith481@gmail.com>"]
+packages = [
+    {include = "scripts"},
+
+]
+#a list of all the required packages with version numbers
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+tox = "^3.22.0"
+
+
+coverage = "^5.4"
+#a list of the required packages for development purposes
+
+[tool.poetry.dev-dependencies]
+
+# Formatters
+
+black = "=20.8b1"
+isort = "=5.5.1"
+
+# Linters
+
+pylint = "~2.6.0"
+
+# Testing
+pytest = "^5.3.2"
+
+# Reports
+coverage = "^5.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
