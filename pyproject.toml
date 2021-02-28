@@ -13,11 +13,16 @@ packages = [
 
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 tox = "^3.22.0"
 
 
 coverage = "^5.4"
+numpy = "^1.20.1"
+pandas = "^1.2.2"
+mypy = "^0.812"
+
+
 #a list of the required packages for development purposes
 
 [tool.poetry.dev-dependencies]
@@ -32,10 +37,11 @@ isort = "=5.5.1"
 pylint = "~2.6.0"
 
 # Testing
-pytest = "^5.3.2"
+pytest = "^6.2.2"
 
 # Reports
 coverage = "^5.3.1"
+pre-commit = "^2.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
