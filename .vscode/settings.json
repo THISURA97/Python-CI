@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\tdini\\miniconda3\\python.exe"
+    "python.pythonPath": "C:\\Python39\\python.exe",
+    "python.linting.pylintEnabled": true
 }
