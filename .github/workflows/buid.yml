@@ -23,10 +23,12 @@ jobs:
       - name: Run tox
         run: tox
 
+      - name: new
+        run: chmod +x ./status.sh > README.md
+
       - name: Commit files
         id: commit
         run: |
-          chmod +x ./status.sh > README.md
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git add --all
