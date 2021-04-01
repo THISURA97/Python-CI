@@ -1,2 +1,7 @@
-git for-each-ref --format='%(committerdate) - (%(color:red)%(committerdate:relative)%(color:reset))- %(color:green)%(authorname)%(color:reset) - %(color:yellow)%(refname:short)%(color:reset)- %(contents:subject)'
+git for-each-ref --format='%(committerdate)
+-(%(color:red)%(committerdate:relative)%(color:reset))
+-%(color:green)%(authorname)%(color:reset)
+-%(color:yellow)%(refname:short)%(color:reset)
+-%(contents:subject)
+'
 echo
