@@ -3,9 +3,21 @@ repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
     hooks:
-    -   id: check-yaml
-    -   id: end-of-file-fixer
     -   id: trailing-whitespace
+    -   id: debug-statements
+    -   id: double-quote-string-fixer
+    -   id: fix-encoding-pragma
+    -   id: requirements-txt-fixer
+    -   id: check-added-large-files # Prevent giant files from being committed
+    -   id: check-byte-order-marker # Prevents weird UTF-8 encoding edge cases
+    -   id: check-case-conflict # Check if case-insensitive filesystems would bork
+    -   id: check-docstring-first # Check for if docstring was misplaced
+    -   id: check-merge-conflict # checks strings that look like a committed merge conflict
+    -   id: check-xml
+    -   id: check-yaml # checks for valid yaml
+    -   id: end-of-file-fixer # checks for ending with a newline
+    -   id: mixed-line-ending # consistent LF or CRLF
+    -   id: trailing-whitespace # no trailing whitespace
 
 -   repo: https://github.com/psf/black
     rev: 19.3b0
@@ -13,11 +25,9 @@ repos:
     -   id: black
 
 -   repo: https://github.com/timothycrosley/isort
-# 4.3.21-2 is broken
-# https://github.com/timothycrosley/isort/issues/1154
-    rev: 4.3.21
+    rev: 5.7.0
     hooks:
-    -   id: isort
+      - id: isort
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.790

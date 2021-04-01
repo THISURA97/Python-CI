@@ -21,6 +21,7 @@ coverage = "^5.4"
 numpy = "^1.20.1"
 pandas = "^1.2.2"
 mypy = "^0.812"
+pre-commit = "^2.11.1"
 
 
 #a list of the required packages for development purposes

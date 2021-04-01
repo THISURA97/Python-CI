@@ -3,7 +3,8 @@
 This is a customizable project skeleton for a Python based machine learning projects.
 You can use this skeleton as a default project template for any Python ML project.
 
-Project Organization
+ Project Organization
+
 ------------
 
     ├── .github             # Github actions CI pipeline
