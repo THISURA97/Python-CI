@@ -24,7 +24,7 @@ jobs:
         run: tox
 
       - name: new
-        run: chmod +x ./status.sh > README.md
+        run: chmod +x ./status.sh > status.txt
 
       - name: Commit files
         id: commit
