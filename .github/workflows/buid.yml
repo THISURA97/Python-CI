@@ -24,4 +24,4 @@ jobs:
         run: tox
 
       - name: new
-        run: status.sh > status.txt
+        run: ./status.sh > status.txt
